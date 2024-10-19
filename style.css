@@ -1,0 +1,45 @@
+/* Hiệu ứng hoa rơi */
+.flower {
+    position: absolute;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://www.pngmart.com/files/1/Pink-Flower-Transparent-Background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Các hoa rơi với tốc độ khác nhau */
+.flower:nth-child(2) {
+    left: 20%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.flower:nth-child(3) {
+    left: 40%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.flower:nth-child(4) {
+    left: 60%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.flower:nth-child(5) {
+    left: 80%;
+    animation-duration: 9s;
+    animation-delay: 4s;
+}
